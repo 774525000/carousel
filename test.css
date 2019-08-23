@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 100px;
+}
+
+
+div {
+    width: 540px;
+    height: 320px;
+    overflow: hidden;
+}
+
+ul li:nth-of-type(1) {
+    background: pink;
+}
+
+ul li:nth-of-type(2) {
+    background: skyblue;
+}
+
+ul li:nth-of-type(3) {
+    background: orange
+}
+
+ul li:nth-of-type(4) {
+    background: purple
+}
+
+ul li:nth-of-type(5) {
+    background: pink
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 540px);
+    grid-template-rows: repeat(1, 320px);
+    animation: lunbo 20s infinite;
+}
+
+ul:hover {
+    animation-play-state: paused
+}
+
+
+
+@keyframes lunbo {
+    0% {
+        transform: translateX(0);
+    }
+
+    22.5% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-540px);
+    }
+
+    47.5% {
+        transform: translateX(-540px);
+    }
+
+    50% {
+        transform: translateX(-1080px);
+    }
+
+    72.5% {
+        transform: translateX(-1080px);
+    }
+
+    75% {
+        transform: translateX(-1620px);
+    }
+
+    97.5% {
+        transform: translateX(-1620px);
+    }
+
+    100% {
+        transform: translateX(-2160px);
+    }
+}
